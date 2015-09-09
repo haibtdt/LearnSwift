@@ -5,12 +5,24 @@ import UIKit
 var str = "Hello, playground"
 
 
+/************************
+
+       OPTIONAL
+
+************************/
+
+
 //let optionObj : NSObject? = NSObject()
 let optionObj : NSObject? = nil
 
 let description = optionObj?.description
 
 
+/************************
+
+======== ENUM ===========
+
+************************/
 
 enum Rank : Int {
     
@@ -116,6 +128,31 @@ printResponse(response1)
 printResponse(response2)
 
 
+/************************
+
+======== EXTENSION ======
+
+************************/
+extension Double  {
+    
+    var absoluteValue : Double {
+        
+        if self > 0.0 {
+            
+            return self
+            
+        }
+        
+        return -self
+        
+    }
+    
+    
+}
+
+
+let d = -7.0
+d.absoluteValue
 
 
 
