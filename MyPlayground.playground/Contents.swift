@@ -169,5 +169,17 @@ for f in myRange {
 }
 
 
+/************************
+
+ Nil Coalescing Operator
+
+************************/
+
+let defaultColor = "Blue"
+var userDefinedColor : String? = nil
+//userDefinedColor = "Red"
+var colorNameToUse = userDefinedColor ?? defaultColor
+
+
 
 
