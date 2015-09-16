@@ -154,5 +154,20 @@ extension Double  {
 let d = -7.0
 d.absoluteValue
 
+/************************
+
+======== RANGE ======
+
+************************/
+
+//let myRange = 2..<4
+let myRange = 2...4
+for f in myRange {
+    
+    print(f)
+    
+}
+
+
 
 
