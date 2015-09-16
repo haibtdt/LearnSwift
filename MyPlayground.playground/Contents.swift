@@ -128,6 +128,46 @@ printResponse(response1)
 printResponse(response2)
 
 
+// enum initialization
+enum VoiceStatus {
+    
+    case Pending
+    case Resolved
+    case Processing
+    case Closed
+    case Approved
+    
+    init(text : String) {
+        
+        switch text {
+            
+        case "Pending":
+            self = .Pending
+        case "Resolved":
+            self = .Resolved
+        case "Processing":
+            self = .Processing
+        case "Closed":
+            self = .Closed
+        case "Approved":
+            self = .Approved
+        default:
+            self = .Pending
+        }
+        
+        
+    }
+    
+}
+let status1 = VoiceStatus(text: "Pending")
+status1 == .Pending
+
+let status2 = VoiceStatus(text: "Approved")
+status2 == .Approved
+status2 == .Closed
+
+
+
 /************************
 
 ======== EXTENSION ======
